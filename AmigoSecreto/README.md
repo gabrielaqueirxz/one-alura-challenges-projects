@@ -41,7 +41,7 @@ one-alura-challenges-projects
 Public/
 ├── README.md
 ├── LICENSE
-├── AmigoScreto/
+├── AmigoSecreto/
     ├── assets/
         ├── image.svg
         ├── play.png
