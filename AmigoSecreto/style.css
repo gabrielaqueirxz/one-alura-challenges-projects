@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  background: #FDCEDF;
+}
+
+.background-detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-color: #ff748b;
+  height: calc(100% - 389px);
+  top: 195px;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 32px;
+}
+
+.main-wrapper > div {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.main-container {
+  position: relative;
+  border: 1px solid #ff748b;
+  border-radius: 8px;
+  z-index: 10;
+  background-color: #FFF5F2;
+  filter: drop-shadow(0px 0px 30px #ff748b);
+  height: 871px;
+}
+
+.corner-rectangle {
+  position: absolute;
+  bottom: -15px;
+  right: 32px;
+  z-index: 20;
+  background-color: #ff748b;
+  height: 33px;
+  width: 511px;
+  clip-path: polygon(0% 100%, 0% 50%, 4% 0%, 100% 0%, 100% 50%, 96% 100%);
+}
+
+.content-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.content-section {
+  flex: 1;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  max-width: 50%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 3.75rem;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 64px;
+  color: #a8cd89;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.title-dark {
+  color: #355f2e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.label {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #355f2e;
+  line-height: 110%;
+}
+
+.input {
+  border: 1px solid #355f2e;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  outline: none;
+  font-size: 1.125rem;
+  width: 100%;
+  max-width: 448px;
+  background-color: transparent;
+  color: #355f2e;
+  height: 56px;
+}
+
+.input::placeholder {
+  color: #355f2e;
+  opacity: 0.7;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 12px 16px;
+  cursor: pointer;
+  border: none;
+  min-width: 140px;
+  height: 48px;
+}
+
+.btn-primary {
+  background-color: #ff748b;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #a8cd89;
+  color: #355f2e;
+}
+
+.btn-tertiary {
+  background-color: #355f2e;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.results-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-family: sans-serif;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #355f2e;
+  line-height: 110%;
+}
+
+.friends-list {
+  border: 1px solid #355f2e;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  width: 100%;
+  max-width: 448px;
+  color: #355f2e;
+  line-height: 160%;
+  min-height: 80px;
+  word-break: break-words;
+}
+
+.draw-result {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #355f2e;
+  line-height: 160%;
+  min-height: 60px;
+  word-break: break-words;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .content-section,
+  .image-section {
+    max-width: 100%;
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+  }
+
+  .main-container {
+    height: auto;
+    min-height: 600px;
+  }
+}

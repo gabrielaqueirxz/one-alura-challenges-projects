@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/play.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="background-detail"></div>
+        <div class="main-wrapper">
+            <div class="main-container">
+                <div class="corner-rectangle"></div>
+                <div class="content-wrapper">
+                    <div class="content-section">
+                        <section class="form-section">
+                            <h1 class="title">
+                                Amigo <span class="title-dark">Secreto</span>
+                            </h1>
+                            <form class="form">
+                                <label class="label">Digite o nome de um amigo</label>
+                                <input
+                                    id="friendName"
+                                    class="input"
+                                    type="text"
+                                    placeholder="Nome do amigo"/>
+                                <div class="buttons-container">
+                                    <button onclick="add()" type="button" class="btn btn-primary">
+                                        Adicionar
+                                    </button>
+                                    <button onclick="sort()" type="button" class="btn btn-secondary">
+                                        Sortear
+                                    </button>
+                                    <button onclick="restart()" type="button" class="btn btn-tertiary">
+                                        Reiniciar
+                                    </button>
+                                </div>
+                            </form>
+                        </section>
+                        <section class="results-section">
+                            <article class="friends-section">
+                                <p class="section-title">Amigos incluídos</p>
+                                <div class="friends-list" id="friendsList"></div>
+                            </article>
+                            <article class="draw-section">
+                                <p class="section-title">Sorteio</p>
+                                <div class="draw-result" id="sortResult"></div>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="image-section">
+                        <div class="image-container">
+                            <img src="assets/image.svg" alt="Desenho de amigos" class="main-image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
